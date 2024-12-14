@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+    }
+
+    .button {
+      background-color: #7226FF;
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .button:hover {
+      background-color: #F042FF;
+    }
+  </style>
+</head>
+<body>
+<div>
+  <button class="button" onclick="draw()">Draw</button>
+  <button class="button" onclick="explainCode()">Explain The Code</button>
+</div>
+
+<script>
+  function draw() {
+    alert('Draw function called!');
+    // Add your drawing logic here
+  }
+
+  function explainCode() {
+    alert('Explain The Code function called!');
+    // Add your explanation logic here
+  }
+</script>
+</body>
+</html>

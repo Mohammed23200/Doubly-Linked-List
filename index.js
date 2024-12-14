@@ -1,71 +1,71 @@
 function Length_Iterative() {
-    alert('Length_Iterative() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Length_Recursive() {
-    alert('Length_Recursive() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Swap() {
-    alert('Swap() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Reverse() {
-    alert('Reverse() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Merge() {
-    alert('Merge() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Max() {
-    alert('Max() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Min() {
-    alert('Min() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Sum() {
-    alert('Sum() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Aver() {
-    alert('Aver() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Median() {
-    alert('Median() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function StrDev() {
-    alert('StrDev() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Max_Second() {
-    alert('Max_Second() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Min_Second() {
-    alert('Min_Second() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Split() {
-    alert('Split() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Insert() {
-    alert('Insert() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Sorted() {
-    alert('Sorted() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Even() {
-    alert('Even() called');
+    window.location.href = 'theTwoButton.html';
 }
 
 function Odd() {
-    alert('Odd() called');
+    window.location.href = 'theTwoButton.html';
 }
