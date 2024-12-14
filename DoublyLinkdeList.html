@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Buttons</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(45deg, #7226FF, #F042FF, #FFE5F1);
+      background-size: 200% 200%;
+      animation: gradientAnimation 10s ease infinite;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    @keyframes gradientAnimation {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .button-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+    }
+
+    .button {
+      background-color: #fff;
+      color: #7226FF;
+      border: none;
+      border-radius: 10px;
+      padding: 15px 25px;
+      font-size: 16px;
+      font-weight: bold;
+      text-transform: capitalize;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .button:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+      color: #fff;
+      background: linear-gradient(45deg, #7226FF, #F042FF);
+    }
+
+    .button:active {
+      transform: scale(1.2);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.3);
+    }
+  </style>
+</head>
+<body>
+<div class="button-container">
+  <button class="button" onclick="Length_Iterative()">Length_Iterative</button>
+  <button class="button" onclick="Length_Recursive()">Length_Recursive</button>
+  <button class="button" onclick="Swap()">Swap</button>
+  <button class="button" onclick="Reverse()">Reverse</button>
+  <button class="button" onclick="Merge()">Merge</button>
+  <button class="button" onclick="Max()">Max</button>
+  <button class="button" onclick="Min()">Min</button>
+  <button class="button" onclick="Sum()">Sum</button>
+  <button class="button" onclick="Aver()">Aver</button>
+  <button class="button" onclick="Median()">Median</button>
+  <button class="button" onclick="StrDev()">StrDev</button>
+  <button class="button" onclick="Max_Second()">Max_Second</button>
+  <button class="button" onclick="Min_Second()">Min_Second</button>
+  <button class="button" onclick="Split()">Split</button>
+  <button class="button" onclick="Insert()">Insert</button>
+  <button class="button" onclick="Sorted()">Sorted</button>
+  <button class="button" onclick="Even()">Even</button>
+  <button class="button" onclick="Odd()">Odd</button>
+</div>
+
+<script>
+  function Length_Iterative() {
+    alert('Length_Iterative() called');
+  }
+
+  function Length_Recursive() {
+    alert('Length_Recursive() called');
+  }
+
+  function Swap() {
+    alert('Swap() called');
+  }
+
+  function Reverse() {
+    alert('Reverse() called');
+  }
+
+  function Merge() {
+    alert('Merge() called');
+  }
+
+  function Max() {
+    alert('Max() called');
+  }
+
+  function Min() {
+    alert('Min() called');
+  }
+
+  function Sum() {
+    alert('Sum() called');
+  }
+
+  function Aver() {
+    alert('Aver() called');
+  }
+
+  function Median() {
+    alert('Median() called');
+  }
+
+  function StrDev() {
+    alert('StrDev() called');
+  }
+
+  function Max_Second() {
+    alert('Max_Second() called');
+  }
+
+  function Min_Second() {
+    alert('Min_Second() called');
+  }
+
+  function Split() {
+    alert('Split() called');
+  }
+
+  function Insert() {
+    alert('Insert() called');
+  }
+
+  function Sorted() {
+    alert('Sorted() called');
+  }
+
+  function Even() {
+    alert('Even() called');
+  }
+
+  function Odd() {
+    alert('Odd() called');
+  }
+</script>
+</body>
+</html>
