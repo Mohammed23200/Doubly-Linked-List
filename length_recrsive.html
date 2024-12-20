@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body class="container3" style="margin-top: 118px">
+<div class="card">
+  <div class="header">
+    <div class="top">
+      <div class="circle">
+        <span class="red circle2"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow circle2"></span>
+      </div>
+      <div class="circle">
+        <span class="green circle2"></span>
+      </div>
+      <div class="title">
+        <p id="title2">style.css</p>
+      </div>
+    </div>
+  </div>
+  <div class="code-container">
+    <textarea class="area" id="code" name="code" readonly="">
+template <class T>
+int Chain<T>::Length_Iterative() const {
+    int length = 0;
+    Node<T>* current = head;
+    while (current) {
+        length++;
+        current = current->Next;
+    }
+    return length;
+}
+    </textarea
+    >
+  </div>
+</div>
+
+<div class="card">
+  <div class="icon">
+  </div>
+
+  <div class="content">
+    <h3 >Length_iterative</h3>
+    <p>
+      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
+    </p>
+  </div>
+</div>
+
+
+</body>
+</html>
