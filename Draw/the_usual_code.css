@@ -1,0 +1,183 @@
+/* Center the button container on the page */
+.button-container {
+    display: flex; /* Use Flexbox for layout */
+    flex-direction: row; /* Arrange buttons horizontally */
+    gap: 50px; /* Space between buttons */
+    align-items: center; /* Align buttons vertically in the middle */
+    justify-content: center; /* Center the buttons horizontally */
+    position: relative; /* Needed for absolute positioning of arrows */
+    height: 100vh; /* Full height for vertical centering */
+    margin: 0; /* Reset default margins */
+}
+
+/* Styling for buttons */
+button {
+    display: flex;
+    align-items: center; /* Center-align content inside the button */
+    justify-content: center; /* Center-align content horizontally */
+    gap: 10px; /* Space between "Prev", A/B/C, and "Next" */
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border: 2px solid rgba(255, 255, 255, 0.333);
+    border-radius: 40px;
+    padding: 16px 24px; /* Adjust padding for button size */
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+    text-align: center;
+    position: relative; /* Needed for proper placement of internal content */
+}
+
+button:hover {
+    color: #516d91;
+    background-color: #e5edf5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+button:active {
+    box-shadow: none;
+}
+
+/* Arrow pointing to "Prev" in the first button */
+.button-container .prev-arrow::before {
+    content: '';
+    position: absolute;
+    top: 67%;
+    right: calc(115% + -32px);
+    width: 54px;
+    height: 2px;
+    background-color: #7e97b8;
+    z-index: 0;
+}
+
+.button-container .prev-arrow::after {
+    content: '';
+    position: absolute;
+    top: 66%;
+    right: calc(161% + -70px);
+    transform: translateY(-50%) rotate(-64deg);
+    width: 10px;
+    height: 10px;
+    background-color: #7e97b8;
+    clip-path: polygon(0 0, 100% 50%, 0 100%); /* Create a triangular arrowhead */
+}
+
+/* Arrow pointing to "Next" in the last button */
+.button-container .next-arrow::before {
+    content: ''; /* Empty content for the second arrow line */
+    position: absolute; /* Position the arrow relative to container */
+    top: 47%; /* Align with the "Next" text */
+    left: calc(50% + 90px); /* Adjust left position relative to the third button */
+    width: 51px; /* Arrow line's length */
+    height: 2px; /* Thickness of the arrow line */
+    background-color: #7e97b8; /* Arrow line color */
+    z-index: 0; /* Ensure it sits behind the buttons */
+}
+
+.button-container .next-arrow::after {
+    content: ''; /* Empty content for the arrowhead */
+    position: absolute; /* Position the arrowhead relative to the container */
+    top: 47%; /* Align with arrow line */
+    left: calc(47% + 145px); /* Adjust left placement relative to the third button */
+    transform: translateY(-50%) rotate(0deg); /* Rotate to create arrowhead effect */
+    width: 10px; /* Arrowhead width */
+    height: 10px; /* Arrowhead height */
+    background-color: #7e97b8; /* Arrowhead color */
+    clip-path: polygon(0 0, 100% 50%, 0 100%); /* Create a triangular arrowhead */
+}
+.center11 {
+    display: block; /* Ensure it's treated as a block-level element */
+    margin: 10px auto; /* Reduce the margin to bring it closer (20px -> 10px) */
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border: 2px solid rgba(255, 255, 255, 0.333);
+    border-radius: 40px;
+    padding: 16px 24px; /* Adjust padding for button size */
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.center11:hover {
+    color: #516d91;
+    background-color: #e5edf5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+.center11:active {
+    box-shadow: none;
+}
+.vertical-arrow {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    margin-left: 10px; /* Spacing between text and arrow */
+    position: relative; /* Required for positioning the ::after pseudo-element */
+}
+
+.vertical-arrow::before {
+    content: '';
+    position: absolute;
+    top: -427px;
+    left: 435px;
+    width: 2px;
+    height: 53px;
+    background-color: #7e97b8;
+}
+
+.vertical-arrow::after {
+    content: '';
+    position: absolute;
+    top: -431px;
+    left: 431px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 10px solid #7e97b8;
+}
+.button1 {
+    width: 64px;
+    top: -375px;
+    left: 389px;
+    height: 12px;
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+    color: #7e97b8;
+    background-color: #e0e8ef;
+    border: 2px solid rgba(255, 255, 255, 0.333);
+    border-radius: 40px;
+    padding: 16px 24px;
+    transition: 0.2s;
+    box-shadow: -4px -2px 16px 0px #ffffff, 4px 2px 16px 0px rgb(95 157 231 / 48%);
+    text-align: center;
+    position: relative;
+}
+
+.button1:hover {
+    color: #516d91;
+    background-color: #e5edf5;
+    box-shadow: -2px -1px 8px 0px #ffffff, 2px 1px 8px 0px rgb(95 157 231 / 48%);
+}
+
+.button1:active {
+    box-shadow: none;
+}
