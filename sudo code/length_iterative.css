@@ -1,4 +1,12 @@
-/* From Uiverse.io by MuhammadHasann */
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(255, 255, 255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 0%, rgba(73,73,73,1) 100%);
+}
 .card {
     --white: hsl(0, 0%, 100%);
     --black: hsl(240, 15%, 9%);
