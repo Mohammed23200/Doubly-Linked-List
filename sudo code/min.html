@@ -15,7 +15,7 @@
   <div class="card_title__container">
     <span class="card_title">Sudo Code</span>
     <p class="card_paragraph">
-      Length_itterative
+      Min
     </p>
   </div>
   <hr class="line" />
@@ -35,7 +35,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text">FUNCTION Length_Iterative()
+      <span class="list_text">FUNCTION Min() RETURNS int
 </span>
     </li>
     <li class="card__list_item">
@@ -53,7 +53,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text">SET length TO 0</span>
+      <span class="list_text">IF head IS NULL THEN</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -70,7 +70,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text">SET current TO head</span>
+      <span class="list_text">  RETURN INT_MAX</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -87,7 +87,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text"> WHILE current IS NOT NULL DO</span>
+      <span class="list_text"> minVal = INT_MAX</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -105,7 +105,7 @@
         </svg>
       </span>
       <span class="list_text">
- INCREMENT length BY 1</span>
+current = head</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -123,25 +123,7 @@
         </svg>
       </span>
       <span class="list_text">
- SET current TO current.Next</span>
-    </li>
-    <li class="card__list_item">
-      <span class="check">
-        <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 16 16"
-                fill="currentColor"
-                class="check_svg"
-        >
-          <path
-                  fill-rule="evenodd"
-                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.11 INCREMENT length BY 14l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
-                  clip-rule="evenodd"
-          ></path>
-        </svg>
-      </span>
-      <span class="list_text">
-     END WHILE
+     WHILE current IS NOT NULL DO
 </span>
     </li>
     <li class="card__list_item">
@@ -160,7 +142,8 @@
         </svg>
       </span>
       <span class="list_text">
- RETURN length</span>
+ minVal = min(minVal, current.value)
+      </span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -178,8 +161,62 @@
         </svg>
       </span>
       <span class="list_text">
- END FUNCTION</span>
+current = current.Next</span>
     </li>
+    <li class="card__list_item">
+      <span class="check">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="check_svg"
+        >
+          <path
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.11 INCREMENT length BY 14l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                  clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+      <span class="list_text">
+END WHILE</span>
+    </li>
+      <li class="card__list_item">
+      <span class="check">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="check_svg"
+        >
+          <path
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                  clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+          <span class="list_text">RETURN minVal
+</span>
+      </li>
+      <li class="card__list_item">
+      <span class="check">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="check_svg"
+        >
+          <path
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                  clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+          <span class="list_text">END FUNCTION
+</span>
+      </li>
   </ul>
 
 </div>

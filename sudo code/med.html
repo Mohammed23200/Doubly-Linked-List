@@ -15,7 +15,7 @@
   <div class="card_title__container">
     <span class="card_title">Sudo Code</span>
     <p class="card_paragraph">
-      Length_itterative
+      Median
     </p>
   </div>
   <hr class="line" />
@@ -35,7 +35,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text">FUNCTION Length_Iterative()
+      <span class="list_text">FUNCTION Median() RETURNS double
 </span>
     </li>
     <li class="card__list_item">
@@ -53,7 +53,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text">SET length TO 0</span>
+      <span class="list_text">length = Length_Iterative()</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -70,7 +70,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text">SET current TO head</span>
+      <span class="list_text">IF length == 0 THEN</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -87,7 +87,7 @@
           ></path>
         </svg>
       </span>
-      <span class="list_text"> WHILE current IS NOT NULL DO</span>
+      <span class="list_text">  RETURN 0</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -105,7 +105,7 @@
         </svg>
       </span>
       <span class="list_text">
- INCREMENT length BY 1</span>
+ current = head</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -123,7 +123,7 @@
         </svg>
       </span>
       <span class="list_text">
- SET current TO current.Next</span>
+ FOR i FROM 0 TO length / 2 - 1 DO</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -141,7 +141,7 @@
         </svg>
       </span>
       <span class="list_text">
-     END WHILE
+current = current.Next
 </span>
     </li>
     <li class="card__list_item">
@@ -160,7 +160,7 @@
         </svg>
       </span>
       <span class="list_text">
- RETURN length</span>
+IF length MOD 2 == 0 THEN</span>
     </li>
     <li class="card__list_item">
       <span class="check">
@@ -178,8 +178,62 @@
         </svg>
       </span>
       <span class="list_text">
- END FUNCTION</span>
+RETURN (current.value + current.Prev.value) / 2.0</span>
     </li>
+      <li class="card__list_item">
+      <span class="check">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="check_svg"
+        >
+          <path
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                  clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+          <span class="list_text"> ELSE
+</span>
+      </li>
+      <li class="card__list_item">
+      <span class="check">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="check_svg"
+        >
+          <path
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                  clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+          <span class="list_text">RETURN current.value
+</span>
+      </li>
+      <li class="card__list_item">
+      <span class="check">
+        <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="check_svg"
+        >
+          <path
+                  fill-rule="evenodd"
+                  d="M12.416 3.376a.75.75 0 0 1 .208 1.04l-5 7.5a.75.75 0 0 1-1.154.114l-3-3a.75.75 0 0 1 1.06-1.06l2.353 2.353 4.493-6.74a.75.75 0 0 1 1.04-.207Z"
+                  clip-rule="evenodd"
+          ></path>
+        </svg>
+      </span>
+          <span class="list_text">END FUNCTION
+</span>
+      </li>
   </ul>
 
 </div>
