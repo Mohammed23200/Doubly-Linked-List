@@ -26,14 +26,19 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
-        current = current->Next;
+void Chain<T>::Reverse()
+{
+    Node<T> *current = head;
+    Node<T> *prev = nullptr;
+    while (current)
+    {
+        Node<T> *nextNode = current->Next;
+        current->Next = prev;
+        current->Prev = nextNode;
+        prev = current;
+        current = nextNode;
     }
-    return length;
+    head = prev;
 }
     </textarea
     >

@@ -26,14 +26,37 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
-        current = current->Next;
+Chain<T> &Chain<T>::Insert(int k, const T &x)
+{
+    if (k < 1)
+        throw out_of_range("Invalid position");
+
+    Node<T> *newNode = new Node<T>(x);
+    if (k == 1)
+    {
+        newNode->Next = head;
+        if (head)
+            head->Prev = newNode;
+        head = newNode;
     }
-    return length;
+    else
+    {
+        Node<T> *current = head;
+        int index = 1;
+        while (current && index < k - 1)
+        {
+            current = current->Next;
+            index++;
+        }
+        if (!current)
+            throw out_of_range("Invalid position");
+        newNode->Next = current->Next;
+        if (current->Next)
+            current->Next->Prev = newNode;
+        current->Next = newNode;
+        newNode->Prev = current;
+    }
+    return *this;
 }
     </textarea
     >

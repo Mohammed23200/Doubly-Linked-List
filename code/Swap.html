@@ -26,14 +26,39 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
+void Chain<T>::Swap(T x, T y)
+{
+    if (x == y)
+        return;
+
+    Node<T> *nodeX = nullptr, *nodeY = nullptr;
+    Node<T> *current = head;
+    while (current)
+    {
+        if (current->value == x)
+            nodeX = current;
+        if (current->value == y)
+            nodeY = current;
         current = current->Next;
     }
-    return length;
+    if (!nodeX || !nodeY)
+        return;
+
+    if (nodeX->Prev)
+        nodeX->Prev->Next = nodeY;
+    else
+        head = nodeY;
+    if (nodeY->Prev)
+        nodeY->Prev->Next = nodeX;
+    else
+        head = nodeX;
+    if (nodeX->Next)
+        nodeX->Next->Prev = nodeY;
+    if (nodeY->Next)
+        nodeY->Next->Prev = nodeX;
+
+    swap(nodeX->Prev, nodeY->Prev);
+    swap(nodeX->Next, nodeY->Next);
 }
     </textarea
     >

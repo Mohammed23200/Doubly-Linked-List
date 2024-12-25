@@ -26,14 +26,15 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
+Chain<T> &Chain<T>::Merge(const Chain<T> &other)
+{
+    Node<T> *current = other.head;
+    while (current)
+    {
+        Insert(Length_Iterative() + 1, current->value);
         current = current->Next;
     }
-    return length;
+    return *this;
 }
     </textarea
     >

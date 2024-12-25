@@ -26,14 +26,29 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
+void Chain<T>::Max_Second() const
+{
+    if (!head || !head->Next)
+    {
+        cout << "List doesn't have enough elements!" << endl;
+        return;
+    }
+    int max1 = INT_MIN, max2 = INT_MIN;
+    Node<T> *current = head;
+    while (current)
+    {
+        if (current->value > max1)
+        {
+            max2 = max1;
+            max1 = current->value;
+        }
+        else if (current->value > max2 && current->value != max1)
+        {
+            max2 = current->value;
+        }
         current = current->Next;
     }
-    return length;
+    cout << "Max1: " << max1 << ", Max2: " << max2 << endl;
 }
     </textarea
     >

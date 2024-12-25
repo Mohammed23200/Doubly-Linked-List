@@ -26,15 +26,20 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
+double Chain<T>::StrDev() const
+{
+    double mean = Average();
+    int length = Length_Iterative();
+    double variance = 0;
+    Node<T> *current = head;
+    while (current)
+    {
+        variance += pow(current->value - mean, 2);
         current = current->Next;
     }
-    return length;
+    return sqrt(variance / length);
 }
+
     </textarea
     >
   </div>

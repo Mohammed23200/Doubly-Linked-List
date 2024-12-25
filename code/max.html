@@ -26,14 +26,18 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
+int Chain<T>::Max() const
+{
+    if (!head)
+        return INT_MIN;
+    int maxVal = INT_MIN;
+    Node<T> *current = head;
+    while (current)
+    {
+        maxVal = max(maxVal, current->value);
         current = current->Next;
     }
-    return length;
+    return maxVal;
 }
     </textarea
     >

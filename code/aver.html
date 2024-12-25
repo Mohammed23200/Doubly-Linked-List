@@ -26,17 +26,12 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
-        current = current->Next;
-    }
-    return length;
+double Chain<T>::Average() const
+{
+    int length = Length_Iterative();
+    return (length == 0) ? 0 : (double)Sum() / length;
 }
-    </textarea
-    >
+    </textarea>
   </div>
 </div>
 
