@@ -516,4 +516,19 @@ body {
     opacity: 1; /* Fade in */
     pointer-events: auto; /* Allow interaction */
 }
+.fade-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0); /* Initially fully transparent */
+    transition: background 0.5s ease; /* Smooth fade-out transition */
+    z-index: 9999;
+    pointer-events: none; /* Prevent interaction */
+}
+
+.fade-overlay.active {
+    background: rgba(0, 0, 0, 0.5); /* Fade to a darker overlay */
+}
 
