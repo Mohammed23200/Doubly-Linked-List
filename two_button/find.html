@@ -5,9 +5,9 @@
   <title>Title</title>
   <link rel="stylesheet" href="../style.css">
   <style>
-    body{
-      background: rgb(254,254,254);
-      background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(98,98,98,1) 0%, rgba(22,22,22,1) 100%);
+    body {
+      background: rgb(254, 254, 254);
+      background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, rgba(98, 98, 98, 1) 0%, rgba(22, 22, 22, 1) 100%);
     }
   </style>
 </head>
@@ -25,6 +25,7 @@
     Detailed explanation and method of drawing
   </p>
 </div>
+
 <div class="card">
   <div class="align">
     <span class="red"></span>
@@ -37,19 +38,30 @@
     The code and its explanation line by line with boring details until you master writing it
   </p>
 </div>
-<div class="card">
+
+<!-- The "Sudo Code" Card -->
+<div class="card" id="sudoCard">
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
     <span class="green"></span>
   </div>
-
   <h1>Sudo Code</h1>
   <p>
-    this will make the sudo code for the double linked list
+    This will show the sudo code for the double linked list.
   </p>
 </div>
+
 <div class="fade-overlay"></div>
+
+<script>
+  // Add event listener to the "Sudo Code" card
+  document.getElementById('sudoCard').addEventListener('click', function() {
+    // Redirect to the second HTML page
+    window.location.href = "http://localhost:63342/Doubly-Linked-List/sudo%20code/find.html"; // Adjust the path if necessary
+  });
+</script>
+
 <script src="../index.js"></script>
 </body>
 </html>
