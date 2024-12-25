@@ -5,15 +5,15 @@
   <title>Title</title>
   <link rel="stylesheet" href="../style.css">
   <style>
-    body {
-      background: rgb(254, 254, 254);
-      background: linear-gradient(90deg, rgba(254, 254, 254, 1) 0%, rgba(98, 98, 98, 1) 0%, rgba(22, 22, 22, 1) 100%);
+    body{
+      background: rgb(254,254,254);
+      background: linear-gradient(90deg, rgba(254,254,254,1) 0%, rgba(98,98,98,1) 0%, rgba(22,22,22,1) 100%);
     }
   </style>
 </head>
 <body>
 
-<div class="card" id="DrawCode">
+<div class="card">
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
@@ -26,7 +26,7 @@
   </p>
 </div>
 
-<div class="card">
+<div class="card" id="codeCard"> <!-- Added id for the Code card -->
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
@@ -39,16 +39,16 @@
   </p>
 </div>
 
-<!-- The "Sudo Code" Card -->
-<div class="card" id="sudoCard">
+<div class="card">
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
     <span class="green"></span>
   </div>
+
   <h1>Sudo Code</h1>
   <p>
-    This will show the sudo code for the double linked list.
+    This will make the sudo code for the double linked list
   </p>
 </div>
 
@@ -56,17 +56,20 @@
 
 <script>
   // Add event listener to the "Sudo Code" card
-  document.getElementById('sudoCard').addEventListener('click', function() {
+  document.getElementById('sudoCard').addEventListener('click', function () {
     // Redirect to the second HTML page
-    window.location.href = "../sudo code/find.html"; // Adjust the path if necessary
+    window.location.href = "http://localhost:63342/Doubly-Linked-List/sudo%20code/length_iterative.html"; // Adjust the path if necessary
   });
-  // Add event listener to the "Sudo Code" card
-  document.getElementById('DrawCode').addEventListener('click', function() {
-    // Redirect to the second HTML page
-    window.location.href = "../Draw/draw_find.html"; // Adjust the path if necessary
+</script>
+<script>
+  // Add event listener to the "Code" card
+  document.getElementById('codeCard').addEventListener('click', function() {
+    // Redirect to the code explanation page
+    window.location.href = "http://localhost:63342/Doubly-Linked-List/code/find.html"; // Adjust the path if necessary
   });
 </script>
 
 <script src="../index.js"></script>
+
 </body>
 </html>
