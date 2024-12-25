@@ -12,6 +12,19 @@
   </style>
 </head>
 <body>
+
+<div class="card" id="DrawCode">
+  <div class="align">
+    <span class="red"></span>
+    <span class="yellow"></span>
+    <span class="green"></span>
+  </div>
+
+  <h1>Draw</h1>
+  <p>
+    Detailed explanation and method of drawing
+  </p>
+</div>
 <div class="card" id="codeCard">
   <div class="align">
     <span class="red"></span>
@@ -42,14 +55,22 @@
   // Add event listener to the "Sudo Code" card
   document.getElementById('sudoCard').addEventListener('click', function () {
     // Redirect to the second HTML page
-    window.location.href = "../sudo code/length_recursive.html"; // Adjust the path if necessary
+    window.location.href = "../sudo code/search.html"; // Adjust the path if necessary
   });
+</script>
+<script>
   // Add event listener to the "Code" card
   document.getElementById('codeCard').addEventListener('click', function() {
     // Redirect to the code explanation page
-    window.location.href = "../code/length_recrsive.html"; // Adjust the path if necessary
+    window.location.href = "../code/Search.html"; // Adjust the path if necessary
   });
+  document.getElementById('DrawCode').addEventListener('click', function() {
+    // Redirect to the second HTML page
+    window.location.href = "../Draw/search_draw.html"; // Adjust the path if necessary
+  });
+
 </script>
+
 
 <script src="../index.js"></script>
 
