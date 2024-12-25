@@ -68,10 +68,34 @@ Chain<T> &Chain<T>::Insert(int k, const T &x)
   </div>
 
   <div class="content">
-    <h3 >Length_iterative</h3>
+    <h3 >insert</h3>
     <p>
-      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
-    </p>
+        The Insert function is designed to insert a new element into a doubly linked list at a specified position.
+
+        Function Signature:
+
+        The function is a template that works with any data type T.
+        It takes an integer k (the position to insert) and a constant reference x (the value to insert).
+        Position Validation:
+
+        If k is less than 1, the function throws an out_of_range exception, indicating an invalid position.
+        Node Creation:
+
+        A new node is created and initialized with the value x.
+        Insert at Head:
+
+        If k is 1, the new node is inserted at the beginning of the list:
+        The new node's Next pointer is set to the current head.
+        If the list is not empty, the current head's Prev pointer is updated to point to the new node.
+        The head of the list is updated to the new node.
+        Insert at Other Positions:
+
+        If k is greater than 1, the function traverses the list to find the position just before where the new node should be inserted.
+        If the position is valid, the new node is inserted by adjusting the Next and Prev pointers of the surrounding nodes.
+        Return:
+
+        The function returns a reference to the current Chain object, allowing for method chaining.
+        This function effectively manages the pointers in a doubly linked list to ensure that the new node is correctly inserted at the specified position while maintaining the integrity of the list structure.    </p>
   </div>
 </div>
 

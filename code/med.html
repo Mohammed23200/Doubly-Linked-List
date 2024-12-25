@@ -53,10 +53,14 @@ double Chain<T>::Median() const
   </div>
 
   <div class="content">
-    <h3 >Length_iterative</h3>
+    <h3 >median</h3>
     <p>
-      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
-    </p>
+        The Median function calculates the median of the values in a doubly linked list:
+
+        It first checks if the list is empty and returns 0 if so.
+        It then traverses to the middle of the list.
+        If the list has an even number of elements, it returns the average of the two middle values. If it has an odd number of elements, it returns the middle value directly.
+        This function efficiently computes the median by leveraging the properties of the doubly linked list and the calculated length.    </p>
   </div>
 </div>
 
