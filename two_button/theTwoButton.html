@@ -37,7 +37,7 @@
     The code and its explanation line by line with boring details until you master writing it
   </p>
 </div>
-<div class="card">
+<div class="card" id="sudoCard"> <!-- Added id here -->
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
@@ -46,10 +46,20 @@
 
   <h1>Sudo Code</h1>
   <p>
-    this will make the sudo code for the double linked list
+    This will make the sudo code for the double linked list
   </p>
 </div>
 <div class="fade-overlay"></div>
+
+<script>
+  // Add event listener to the "Sudo Code" card
+  document.getElementById('sudoCard').addEventListener('click', function() {
+    // Redirect to the second HTML page
+    window.location.href = "http://localhost:63342/Doubly-Linked-List/sudo%20code/length_iterative.html"; // Adjust the path if necessary
+  });
+</script>
+
 <script src="../index.js"></script>
+
 </body>
 </html>
