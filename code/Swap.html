@@ -70,10 +70,17 @@ void Chain<T>::Swap(T x, T y)
   </div>
 
   <div class="content">
-    <h3 >Length_iterative</h3>
+    <h3 >Swap</h3>
     <p>
-      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
-    </p>
+        the Swap function performs the following steps:
+
+        It checks if the values to be swapped are the same; if they are, it exits early.
+        It initializes pointers to find the nodes containing the values x and y.
+        It traverses the list to locate these nodes.
+        If either node is not found, it exits.
+        It updates the pointers of the neighboring nodes to remove nodeX and nodeY from their current positions.
+        It adjusts the head of the list if necessary.
+        Finally, it swaps the Prev and Next pointers of the two nodes to complete the swap operation. This ensures that the nodes are correctly linked in their new positions within the chain.    </p>
   </div>
 </div>
 

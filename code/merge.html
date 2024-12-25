@@ -46,10 +46,9 @@ Chain<T> &Chain<T>::Merge(const Chain<T> &other)
   </div>
 
   <div class="content">
-    <h3 >Length_iterative</h3>
+    <h3 >merge</h3>
     <p>
-      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
-    </p>
+        Merge function iterates through each node in the other chain and appends its value to the end of the current chain. The use of Length_Iterative() to find the insertion point ensures that the values from other are added in the same order they appear in other. The function modifies the current chain by adding elements from other and returns a reference to the modified chain.    </p>
   </div>
 </div>
 
