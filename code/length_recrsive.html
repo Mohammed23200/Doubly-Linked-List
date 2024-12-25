@@ -26,14 +26,9 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
-    Node<T>* current = head;
-    while (current) {
-        length++;
-        current = current->Next;
-    }
-    return length;
+int Chain<T>::Length_Recursive(Node<T>* node) const {
+    if (!node) return 0;
+    return 1 + Length_Recursive(node->Next);
 }
     </textarea
     >
@@ -45,9 +40,11 @@ int Chain<T>::Length_Iterative() const {
   </div>
 
   <div class="content">
-    <h3 >Length_iterative</h3>
+    <h3 >Length_Recursive</h3>
     <p>
-      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
+        When you call Length_Recursive with the head of the linked list, the function starts counting from that node.
+        For each node, it adds 1 to the count and then calls itself with the next node.
+        This process repeats until it reaches the end of the list (where node becomes nullptr), at which point it starts returning back through the recursive calls, summing up the counts.
     </p>
   </div>
 </div>
