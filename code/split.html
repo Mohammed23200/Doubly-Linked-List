@@ -63,10 +63,13 @@ void Chain<T>::Split(Chain<T> &firstHalf, Chain<T> &secondHalf) const
   </div>
 
   <div class="content">
-    <h3 >Length_iterative</h3>
+    <h3 >Splite</h3>
     <p>
-      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
-    </p>
+        the Split function divides the original chain into two halves:
+
+        The first half contains nodes from the start of the chain up to (but not including) the midpoint.
+        The second half contains nodes from the midpoint to the end of the chain.
+        The function uses the "tortoise and hare" technique to find the midpoint efficiently, ensuring that the split is done in a single pass through the list. After the split, the firstHalf and secondHalf chains are populated with the respective nodes.    </p>
   </div>
 </div>
 
