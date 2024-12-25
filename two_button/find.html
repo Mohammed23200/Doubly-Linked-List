@@ -13,7 +13,7 @@
 </head>
 <body>
 
-<div class="card">
+<div class="card" id="DrawCode">
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
@@ -39,7 +39,7 @@
   </p>
 </div>
 
-<div class="card">
+<div class="card" id="sudoCard">
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
@@ -58,15 +58,20 @@
   // Add event listener to the "Sudo Code" card
   document.getElementById('sudoCard').addEventListener('click', function () {
     // Redirect to the second HTML page
-    window.location.href = "http://localhost:63342/Doubly-Linked-List/sudo%20code/length_iterative.html"; // Adjust the path if necessary
+    window.location.href = "../sudo code/find.html"; // Adjust the path if necessary
   });
 </script>
 <script>
   // Add event listener to the "Code" card
   document.getElementById('codeCard').addEventListener('click', function() {
     // Redirect to the code explanation page
-    window.location.href = "http://localhost:63342/Doubly-Linked-List/code/find.html"; // Adjust the path if necessary
+    window.location.href = "../code/find.html"; // Adjust the path if necessary
   });
+document.getElementById('DrawCode').addEventListener('click', function() {
+    // Redirect to the second HTML page
+    window.location.href = "../Draw/draw_find.html"; // Adjust the path if necessary
+  });
+
 </script>
 
 <script src="../index.js"></script>
