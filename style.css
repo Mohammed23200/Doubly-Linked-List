@@ -22,12 +22,12 @@ body {
     --purple-300: #c389f2;
     --purple-400: #8e26e2;
     --purple-500: #5e2b83;
-    --radius: 12px; /* Reduced radius for smaller buttons */
+    --radius: 18px; /* Reduced radius for smaller buttons */
 
     border-radius: var(--radius);
     outline: none;
     cursor: pointer;
-    font-size: 16px; /* Reduced font size */
+    font-size: 23px; /* Reduced font size */
     font-family: Arial;
     background: transparent;
     letter-spacing: -1px;
@@ -251,6 +251,7 @@ body {
     stroke: var(--purple-300);
 }
 
+
 /** STATES */
 
 .button:hover .words {
@@ -319,7 +320,8 @@ body {
     animation: arrow 1s cubic-bezier(0.7, -0.5, 0.3, 1.5) forwards;
 }
 
-.char.state-2 span::after,.button:focus .char.state-1 span {
+.char.state-2 span::after,
+.button:focus .char.state-1 span {
     animation: charDisappear 0.5s ease forwards calc(var(--i) * 0.03s);
 }
 
@@ -436,7 +438,6 @@ body {
         stroke-dashoffset: -60;
     }
 }
-/* From Uiverse.io by Fcodingx */
 .card {
     width: 190px;
     height: 120px;
