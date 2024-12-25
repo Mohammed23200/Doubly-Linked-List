@@ -183,7 +183,7 @@
                     <span data-label="A" style="--i: 1">A</span>
                     <span data-label="v" style="--i: 2">v</span>
                     <span data-label="r" style="--i: 4">r</span>
-
+                </span>
             </div>
         </div>
     </button>
@@ -316,20 +316,19 @@
 
         };
 
-        // Iterate over buttons and set click event listener
         Object.keys(buttons).forEach(buttonId => {
             const button = document.getElementById(buttonId);
-            button.addEventListener("click", (event) => {
-                event.preventDefault(); // Prevent any default behavior (if needed)
+            if (button) { // Check if the button exists in the DOM
+                button.addEventListener("click", (event) => {
+                    event.preventDefault(); // Prevent any default action
+                    const pagePath = buttons[buttonId]; // Get the mapped path
 
-                const fadeOverlay = document.querySelector('.fade-overlay');
-                fadeOverlay.classList.add("active"); // Activate fade-out effect
-
-                // Wait for fade-out animation, then navigate
-                setTimeout(() => {
-                    window.location.href = buttons[buttonId];
-                }, 500); // Match fade animation duration (500ms)
-            });
+                    // Redirect to the page (no fade effect for simplicity)
+                    window.location.href = pagePath;
+                });
+            } else {
+                console.warn(`Button with ID "${buttonId}" not found.`);
+            }
         });
     });
 </script>
