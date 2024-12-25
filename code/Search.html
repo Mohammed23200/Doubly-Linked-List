@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../style2.css">
+</head>
+<body class="container3" style="margin-top: 118px">
+<div class="card">
+    <div class="header">
+        <div class="top">
+            <div class="circle">
+                <span class="red circle2"></span>
+            </div>
+            <div class="circle">
+                <span class="yellow circle2"></span>
+            </div>
+            <div class="circle">
+                <span class="green circle2"></span>
+            </div>
+            <div class="title">
+                <p id="title2">style.css</p>
+            </div>
+        </div>
+    </div>
+    <div class="code-container">
+    <textarea class="area" id="code" name="code" readonly="">
+template <class T>
+int Chain<T>::Search(const T& x) const {
+    Node<T>* current = head;
+    int index = 1;
+    while (current) {
+        if (current->value == x) return index;
+        current = current->Next;
+        index++;
+    }
+    return 0;
+}
+
+    </textarea
+    >
+    </div>
+</div>
+
+<div class="card">
+    <div class="icon">
+    </div>
+
+    <div class="content">
+        <h3 >Search</h3>
+        <p>
+            When you call Search with a value x, the function starts at the head of the linked list and checks each node's value.
+            It keeps track of the current position (index) as it traverses the list.
+            If it finds a node with a value that matches x, it returns the index of that node.
+            If it reaches the end of the list without finding the value, it returns 0.
+        </p>
+    </div>
+</div>
+
+
+</body>
+</html>

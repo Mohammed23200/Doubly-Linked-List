@@ -25,8 +25,7 @@
     Detailed explanation and method of drawing
   </p>
 </div>
-
-<div class="card" id="codeCard"> <!-- Added id for the Code card -->
+<div class="card">
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
@@ -38,8 +37,7 @@
     The code and its explanation line by line with boring details until you master writing it
   </p>
 </div>
-
-<div class="card">
+<div class="card" id="sudoCard"> <!-- Added id here -->
   <div class="align">
     <span class="red"></span>
     <span class="yellow"></span>
@@ -51,21 +49,13 @@
     This will make the sudo code for the double linked list
   </p>
 </div>
-
 <div class="fade-overlay"></div>
 
 <script>
   // Add event listener to the "Sudo Code" card
-  document.getElementById('sudoCard').addEventListener('click', function () {
+  document.getElementById('sudoCard').addEventListener('click', function() {
     // Redirect to the second HTML page
     window.location.href = "http://localhost:63342/Doubly-Linked-List/sudo%20code/length_recursive.html"; // Adjust the path if necessary
-  });
-</script>
-<script>
-  // Add event listener to the "Code" card
-  document.getElementById('codeCard').addEventListener('click', function() {
-    // Redirect to the code explanation page
-    window.location.href = "http://localhost:63342/Doubly-Linked-List/code/length_recrsive.html"; // Adjust the path if necessary
   });
 </script>
 

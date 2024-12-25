@@ -26,15 +26,21 @@
   <div class="code-container">
     <textarea class="area" id="code" name="code" readonly="">
 template <class T>
-int Chain<T>::Length_Iterative() const {
-    int length = 0;
+bool Chain<T>::Find(int k, T& x) const {
+    if (k < 1) return false;
     Node<T>* current = head;
-    while (current) {
-        length++;
+    int index = 1;
+    while (current && index < k) {
         current = current->Next;
+        index++;
     }
-    return length;
+    if (current) {
+        x = current->value;
+        return true;
+    }
+    return false;
 }
+
     </textarea
     >
   </div>
@@ -45,10 +51,11 @@ int Chain<T>::Length_Iterative() const {
   </div>
 
   <div class="content">
-    <h3 >Length_iterative</h3>
+    <h3 >find</h3>
     <p>
-      the Length_Iterative function iteratively traverses a linked list starting from the head, counts the number of nodes, and returns that count. The use of a while loop allows it to visit each node exactly once, making the time complexity of this function O(n), where n is the number of nodes in the linked list.
-    </p>
+        When you call Find with an index k, the function starts at the head of the linked list and traverses the list until it reaches the k-th node or the end of the list.
+        If it finds the k-th node, it retrieves its value and stores it in the variable x, returning true.
+        If it does not find the k-th node (either because k is out of bounds or the list is too short), it returns false.    </p>
   </div>
 </div>
 
