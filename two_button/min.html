@@ -12,6 +12,18 @@
   </style>
 </head>
 <body>
+<div class="card" id="Draw"> <!-- Added id here -->
+  <div class="align">
+    <span class="red"></span>
+    <span class="yellow"></span>
+    <span class="green"></span>
+  </div>
+
+  <h1>Draw code</h1>
+  <p>
+    This will make the sudo code for the double linked list Detailed explanation and method of drawing
+  </p>
+</div>
 <div class="card" id="codeCard">
   <div class="align">
     <span class="red"></span>
@@ -48,6 +60,10 @@
   document.getElementById('codeCard').addEventListener('click', function() {
     // Redirect to the code explanation page
     window.location.href = "../code/min.html"; // Adjust the path if necessary
+  });
+  document.getElementById('Draw').addEventListener('click', function() {
+    // Redirect to the code explanation page
+    window.location.href = "../Draw/min.html"; // Adjust the path if necessary
   });
 </script>
 
