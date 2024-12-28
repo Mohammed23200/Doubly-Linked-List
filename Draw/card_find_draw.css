@@ -4,7 +4,7 @@ body {
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
-    background-color: #d6baee; /* Background color */
+    background-color: #ffffff; /* Background color */
     opacity: 0; /* Start hidden for fade-in effect */
     transition: opacity 0.7s ease-in-out; /* Fade-in transition */
 }
@@ -89,4 +89,50 @@ body {
 /* Fade-in effect for the card */
 body.page-enter {
     opacity: 1; /* Fully visible */
+}
+.card {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background: lightgrey;
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    transition: all 1s ease-in-out;
+}
+
+.background {
+    position: absolute;
+    inset: 0;
+    background: radial-gradient(circle at 100% 107%, #ff89cc 0%, #9cb8ec 30%, #00ffee 60%, #62c2fe 100%);
+}
+
+.logo {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    transition: all 0.6s ease-in-out;
+}
+
+.logo div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center text and span horizontally */
+    justify-content: center; /* Center them vertically */
+    text-align: center; /* Ensure text is centered */
+}
+
+p {
+    margin: 0;
+    font-size: 31px;
+    color: white;
+}
+
+span {
+    display: block;
+    margin-top: 10px;
+    font-size: 21px;
+    color: white;
+
 }
