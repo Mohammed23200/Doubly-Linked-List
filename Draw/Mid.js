@@ -29,8 +29,14 @@ button.addEventListener('click', () => {
             verticalArrow.style.setProperty('--after-left', '941px');
         }
         // Update "length" display text (stop updating at length = 3)
-        if (clickCount <= maxClicks) {
-            button2Div.textContent = `length = ${clickCount}`;
+        if (clickCount <= 1) {
+            button2Div.textContent = `length = ${2}`;
+        }
+        else if (clickCount <= 2) {
+            button2Div.textContent = `length = ${3}`;
+        }
+        else if (clickCount <= 3) {
+            button2Div.textContent = `mid = ${"B"}`;
         }
 
         // Animate the "next step" button state
