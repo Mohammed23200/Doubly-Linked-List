@@ -4,7 +4,7 @@ body {
     align-items: center; /* Center vertically */
     height: 100vh; /* Full viewport height */
     margin: 0; /* Remove default margin */
-    background-color: #ffffff; /* Background color */
+    background-color: #F5EFFF; /* Background color */
     opacity: 0; /* Start hidden for fade-in effect */
     transition: opacity 0.7s ease-in-out; /* Fade-in transition */
 }
