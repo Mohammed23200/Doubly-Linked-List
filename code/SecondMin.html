@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+      <html lang="en">
+      <head>
+      <meta charset="UTF-8">
+      <title>Title</title>
+  <link rel="stylesheet" href="../style2.css">
+</head>
+<body class="container3" style="margin-top: 118px">
+<div class="card">
+  <div class="header">
+    <div class="top">
+      <div class="circle">
+        <span class="red circle2"></span>
+      </div>
+      <div class="circle">
+        <span class="yellow circle2"></span>
+      </div>
+      <div class="circle">
+        <span class="green circle2"></span>
+      </div>
+      <div class="title">
+        <p id="title2">style.css</p>
+      </div>
+    </div>
+  </div>
+  <div class="code-container">
+    <textarea class="area" id="code" name="code" readonly="">
+template <class T>
+void Chain<T>::Max_Second() const
+{
+    if (!head || !head->Next)
+    {
+        cout << "List doesn't have enough elements!" << endl;
+        return;
+    }
+   template <class T>
+void Chain<T>::Min_Second() const {
+    if (!head || !head->Next) {
+        cout << "List doesn't have enough elements!" << endl;
+        return;
+    }
+    int min1 = INT_MAX, min2 = INT_MAX;
+    Node<T>* current = head;
+    while (current) {
+        if (current->value < min1) {
+            min2 = min1;
+            min1 = current->value;
+        } else if (current->value < min2 && current->value != min1) {
+            min2 = current->value;
+        }
+        current = current->Next;
+    }
+    cout << "Min1: " << min1 << ", Min2: " << min2 << endl;
+}
+    </textarea
+    >
+  </div>
+</div>
+
+<div class="card">
+  <div class="icon">
+  </div>
+
+  <div class="content">
+    <h3 >Second Min</h3>
+    <p>
+      The function effectively finds the two smallest unique values in a linked list. It handles edge cases where the list has fewer than two elements and ensures that the second minimum is distinct from the first minimum. The use of INT_MAX allows for a straightforward comparison to find the minimum values.
+  </div>
+</div>
+
+
+</body>
+</html>
