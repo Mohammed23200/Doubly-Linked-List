@@ -29,11 +29,8 @@ button.addEventListener('click', () => {
             verticalArrow.style.setProperty('--after-left', '941px');
         }
         // Update "length" display text (stop updating at length = 3)
-        if (clickCount === 1) {
-            button2Div.textContent = `sum= ${"10+5 = 15"}`;
-        }
-        else if (clickCount === 2) {
-            button2Div.textContent = `Min= ${"15+20 = 45"}`;
+        if (clickCount <= maxClicks) {
+            button2Div.textContent = `length = ${clickCount}`;
         }
 
         // Animate the "next step" button state
