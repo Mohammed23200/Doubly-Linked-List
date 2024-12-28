@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Buttons</title>
+    <link rel="stylesheet" href="draw-avg.css">
+</head>
+<body style="background-color:#e0f7fa">
+
+<div class="button-container">
+    <button>Null</button>
+    <button>
+        <span class="prev-arrow"></span>Prev<span>|</span>5<span>|</span>Next <span class="next-arrow"></span>
+    </button>
+    <button>
+        <span class="prev-arrow second-arrow"></span>Prev<span>|</span>10<span>|</span>Next<span class="next-arrow"></span>
+    </button>
+    <button>
+        <span class="prev-arrow third-arrow"></span>Prev<span>|</span>20<span>|</span>Next<span class="next-arrow"></span>
+    </button>
+    <button>Null</button>
+</div>
+
+<button class="button3 center11" id="actionButton">
+    <div class="outline"></div>
+    <div class="state state--default">
+        <div class="icon">
+            <svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g style="filter: url(#shadow)">
+                    <path d="..." fill="currentColor"></path>
+                </g>
+                <defs>
+                    <filter id="shadow">
+                        <fedropshadow dx="0" dy="1" stdDeviation="0.6" flood-opacity="0.5"></fedropshadow>
+                    </filter>
+                </defs>
+            </svg>
+        </div>
+        <p>
+            <span style="--i:0">n</span>
+            <span style="--i:1">e</span>
+            <span style="--i:2">x</span>
+            <span style="--i:3">t</span>
+            <span style="--i:4">s</span>
+            <span style="--i:5">t</span>
+            <span style="--i:6">e</span>
+            <span style="--i:7">p</span>
+        </p>
+    </div>
+    <div class="state state--sent">
+        <p>
+            <span style="--i:5">D</span>
+            <span style="--i:6">O</span>
+            <span style="--i:7">n</span>
+            <span style="--i:8">e</span>
+        </p>
+    </div>
+</button>
+
+<div>
+    <div class="vertical-arrow"></div>
+</div>
+<div class="button1">current</div>
+<div class="button2">max = 5</div>
+
+
+<script src="draw-avg.js"></script>
+</body>
+</html>
