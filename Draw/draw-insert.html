@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yes/No Buttons</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #82d8c5;
+            position: relative;
+        }
+
+
+
+        #buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            transition: transform 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+
+<div id="buttons">
+    <button id="yesButton">Yes</button>
+    <button id="noButton">No</button>
+</div>
+<p>you sure want the draw</p>
+
+<script>
+    const yesButton = document.getElementById('yesButton');
+    const noButton = document.getElementById('noButton');
+
+    // Function to move the "Yes" button to a random position
+    function moveButtonRandomly() {
+        const maxX = window.innerWidth - yesButton.offsetWidth; // Max width for positioning
+        const maxY = window.innerHeight - yesButton.offsetHeight; // Max height for positioning
+
+        // Random position within the bounds of the screen
+        const randomX = Math.random() * maxX;
+        const randomY = Math.random() * maxY;
+
+        // Set the button's position using CSS
+        yesButton.style.position = 'absolute';
+        yesButton.style.left = `${randomX}px`;
+        yesButton.style.top = `${randomY}px`;
+    }
+
+    // When "Yes" button is clicked, move it randomly
+    yesButton.addEventListener('click', moveButtonRandomly);
+
+    // When "No" button is clicked, hide the buttons
+    noButton.addEventListener('click', () => {
+        document.getElementById('buttons').style.display = 'none'; // Hides both buttons
+    });
+</script>
+
+</body>
+</html>
