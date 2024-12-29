@@ -11,8 +11,32 @@
 <body>
 <div class="card"></div>
 <div class="button-container">
-    <button class="button">Doubly Linked List</button>
+    <button class="button" id="theButtonOne">Doubly Linked List</button>
     <button class="button">The Developers</button>
 </div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        // Get all button elements by their IDs
+        const buttons = {
+            "theButtonOne":"DoublyLinkdeList.html"
+        };
+
+        Object.keys(buttons).forEach(buttonId => {
+            const button = document.getElementById(buttonId);
+            if (button) { // Check if the button exists in the DOM
+                button.addEventListener("click", (event) => {
+                    event.preventDefault(); // Prevent any default action
+                    const pagePath = buttons[buttonId]; // Get the mapped path
+
+                    // Redirect to the page (no fade effect for simplicity)
+                    window.location.href = pagePath;
+                });
+            } else {
+                console.warn(`Button with ID "${buttonId}" not found.`);
+            }
+        });
+    });
+</script>
 </body>
 </html>
