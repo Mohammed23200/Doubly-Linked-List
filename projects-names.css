@@ -5,6 +5,8 @@ body {
     display: flex; /* Use flexbox for alignment */
     justify-content: center; /* Center horizontally */
     align-items: center; /* Center vertically */
+    background: rgb(236,157,157);
+    background: linear-gradient(90deg, rgba(236,157,157,1) 5%, rgba(241,184,123,1) 27%, rgba(235,172,132,1) 55%, rgba(252,176,69,1) 100%);
 }
 
 .card-container {
