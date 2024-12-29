@@ -12,16 +12,15 @@
 <div class="card"></div>
 <div class="button-container">
     <button class="button" id="theButtonOne">Doubly Linked List</button>
-    <button class="button">The Developers</button>
+    <button class="button" id="theButtonTwo">The Developers</button>
 </div>
 
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        // Get all button elements by their IDs
         const buttons = {
-            "theButtonOne":"DoublyLinkdeList.html"
+            "theButtonOne":"DoublyLinkdeList.html",
+            "theButtonTwo":"projects-names.html"
         };
-
         Object.keys(buttons).forEach(buttonId => {
             const button = document.getElementById(buttonId);
             if (button) { // Check if the button exists in the DOM
